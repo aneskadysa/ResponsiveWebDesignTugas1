@@ -1,0 +1,216 @@
+/* ========== Global Styles ========== */
+/* Menetapkan font global dan pengaturan margin serta background pada seluruh halaman */
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; 
+    background-color: #f5f5f5; 
+    color: #2b2b2b; 
+    padding-top: 80px; 
+}
+
+/* Mengatur gaya gambar supaya memenuhi lebar kontainer dan memiliki sudut melengkung */
+img {
+    width: 100%; 
+    border-radius: 12px; 
+}
+
+/* ========== Header ========== */
+/* Mengatur header agar tetap berada di atas halaman saat scroll */
+.header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #fafafa; 
+    padding: 16px 0; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+    z-index: 10; 
+}
+
+/* Mengatur tata letak dalam header, menggunakan flexbox untuk penyusunan */
+.header-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 16px; 
+}
+
+/* Menetapkan gaya untuk logo di dalam header */
+.logo {
+    font-size: 24px; 
+    font-weight: 600; 
+    color: #2b2b2b; 
+}
+
+/* ========== Container ========== */
+/* Menetapkan lebar maksimal kontainer dan margin serta padding di sekeliling konten */
+.container {
+    max-width: 1080px; 
+    margin: 0 auto;
+    padding: 0 16px; 
+}
+
+/* ========== Menu Title Section ========== */
+/* Mengatur tampilan latar belakang bagian judul menu */
+.menu-header {
+    position: relative; 
+    text-align: center; 
+    height: 300px; 
+    background-image: url('images/bg-menu.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #fff; 
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Membuat efek overlay di atas gambar latar belakang menu */
+.menu-header::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25); 
+    z-index: 0; 
+}
+
+/* Menyusun konten di dalam kontainer menu header */
+.menu-header .container {
+    position: relative; 
+    z-index: 1; 
+    text-align: center; 
+}
+
+/* Menetapkan gaya untuk judul menu */
+.menu-title {
+    font-size: 36px; 
+    font-weight: 600; 
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Memberikan bayangan pada teks judul menu */
+}
+
+/* Menetapkan gaya untuk teks layanan menu */
+.services {
+    margin-top: 10px;
+    font-size: 16px; 
+    font-weight: 500; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
+    letter-spacing: 0.5px; 
+}
+
+/* Menetapkan gaya untuk elemen span di dalam layanan */
+.services span {
+    margin: 0 5px;
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+/* ========== Navigation Tabs ========== */
+/* Mengatur gaya untuk tab navigasi */
+.nav-tabs {
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Mengatur kontainer tab navigasi */
+.nav-tabs .container {
+    display: flex; 
+    gap: 20px; 
+    padding: 12px 0; 
+    overflow-x: auto; 
+    justify-content: center; 
+}
+
+/* Menetapkan gaya untuk link/tab dalam navigasi */
+.nav-tabs a {
+    text-decoration: none; 
+    color: #555; 
+    font-weight: 500; 
+    padding: 8px 12px;
+    border-radius: 20px; 
+    transition: all 0.3s ease;
+    white-space: nowrap; 
+}
+
+/* Memberikan gaya saat tab aktif atau hover */
+.nav-tabs a.active,
+.nav-tabs a:hover {
+    background-color: #ff5e57;
+    color: white; 
+}
+
+/* ========== Menu Items Section ========== */
+/* Mengatur bagian menu item dengan padding dan latar belakang */
+.menu-items {
+    padding: 40px 0; 
+    background-color: #f7f7f7; 
+}
+
+/* Mengatur grid layout untuk menu item */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px; 
+}
+
+/* Mengatur gaya untuk setiap item dalam menu */
+.item {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 16px; 
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12); 
+    overflow: hidden; 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+/* Memberikan efek hover pada item */
+.item:hover {
+    transform: translateY(-6px); 
+    box-shadow: 0 10px 24px rgba(0,0,0,0.16); 
+}
+
+/* Mengatur gaya untuk detail item menu */
+.details {
+    padding: 16px; 
+}
+
+/* Menetapkan gaya untuk judul detail item */
+.details h3 {
+    margin: 0 0 8px; 
+    font-size: 18px; 
+    font-weight: 600; 
+    color: #2b2b2b; 
+}
+
+/* Menetapkan gaya untuk harga item menu */
+.price {
+    color: #ff5e57; /
+    font-weight: 600; 
+    margin-bottom: 8px; 
+}
+
+/* ========== Responsive Design ========== */
+/* Menyesuaikan desain untuk layar dengan lebar maksimal 768px */
+@media (max-width: 768px) {
+    .nav-tabs .container {
+        padding: 8px 0; 
+    }
+
+    .nav-tabs a {
+        font-size: 14px; 
+        padding: 6px 10px; 
+    }
+
+    .menu-title {
+        font-size: 28px; 
+    }
+
+    .services span {
+        font-size: 12px; 
+    }
+}

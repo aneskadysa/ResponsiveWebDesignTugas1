@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Pengaturan karakter set dan viewport untuk responsivitas tampilan pada perangkat mobile -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Judul halaman yang muncul di tab browser -->
+  <title>Anes Sushi Menu</title>
+  <!-- Menyertakan file CSS eksternal untuk styling halaman -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Mengimpor font Poppins dari Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Bagian Header yang berisi logo dari Anes Sushi -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">🍣 Anes Sushi</div>
+    </div>
+  </header>
+
+  <!-- Judul menu dan informasi layanan yang tersedia -->
+  <section class="menu-header">
+    <div class="container menu-text-wrapper">
+      <h1 class="menu-title">Our Menu</h1>
+      <div class="services">
+        <!-- Menampilkan layanan yang tersedia seperti pick-up, delivery, dan sushi catering -->
+        <span>Pick-up</span> <span>•</span> <span>Delivery</span> <span>•</span> <span>Sushi Catering</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigasi tab untuk memilih kategori menu -->
+  <nav class="nav-tabs">
+    <div class="container">
+      <!-- Menampilkan tab menu dengan kategori yang aktif dan tidak aktif -->
+      <a href="#" class="active">Sushi Rolls</a>
+      <a href="#">Nigiri</a>
+      <a href="#">Sashimi</a>
+      <a href="#">Bento Box</a>
+    </div>
+  </nav>
+
+  <!-- Bagian Menu Items yang menampilkan daftar item menu -->
+  <section class="menu-items">
+    <div class="container grid">
+      
+      <!-- Setiap item menu terdiri dari gambar, judul, harga, dan deskripsi -->
+      <div class="item">
+        <img src="images/beefcheeseroll.jpg" alt="Beef Cheese Roll" />
+        <div class="details">
+          <h3>Beef Cheese Roll</h3>
+          <p class="price">Rp 21.000</p>
+          <p>Rol sushi dengan isian daging sapi panggang dan keju meleleh, dibungkus nasi dan nori.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/crispytunaspicyroll.jpg" alt="Crispy Tuna Spicy Roll" />
+        <div class="details">
+          <h3>Crispy Tuna Salad Spicy Roll</h3>
+          <p class="price">Rp 21.000</p>
+          <p>Sushi roll dengan tuna pedas dan salad segar, dilapisi remah renyah di bagian luar.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/dragonroll.jpg" alt="Dragon Roll" />
+        <div class="details">
+          <h3>Dragon Roll</h3>
+          <p class="price">Rp 29.000</p>
+          <p>Sushi premium dengan udang tempura di dalam dan irisan alpukat di atasnya, disiram saus spesial.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/garlicsalmonroll.jpg" alt="Garlic Salmon Roll" />
+        <div class="details">
+          <h3>Garlic Salmon Roll</h3>
+          <p class="price">Rp 29.000</p>
+          <p>Sushi roll berisi salmon segar dengan topping saus bawang putih gurih dan harum.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/garlicsalmonbellyroll.jpg" alt="Garlic Salmon Belly Roll" />
+        <div class="details">
+          <h3>Garlic Salmon Belly Roll</h3>
+          <p class="price">Rp 25.000</p>
+          <p>Roll sushi dengan bagian perut salmon yang lembut dan saus bawang putih khas yang gurih, dibalut dengan nasi dan nori.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/spicydoublesalmonroll.jpg" alt="Spicy Double Salmon Roll" />
+        <div class="details">
+          <h3>Spicy Double Salmon Roll</h3>
+          <p class="price">Rp 23.000</p>
+          <p>Roll sushi dengan dua lapisan salmon pedas, dilengkapi dengan alpukat segar dan dibalut dengan nasi dan nori yang lembut.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/spicygyunikuroll.jpg" alt="Spicy Gyuniku Roll" />
+        <div class="details">
+          <h3>Spicy Gyuniku Roll</h3>
+          <p class="price">Rp 24.000</p>
+          <p>Roll sushi dengan isian daging sapi panggang, sayuran segar, dan saus pedas yang menggugah selera, dibungkus dengan nasi dan nori.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/teriyakigyunikuroll.jpg" alt="Teriyaki Gyuniku Roll" />
+        <div class="details">
+          <h3>Teriyaki Gyuniku Roll</h3>
+          <p class="price">Rp 28.000</p>
+          <p>Sushi roll dengan isian daging sapi teriyaki yang manis dan gurih, dipadukan dengan alpukat segar dan dibungkus dengan nasi serta nori.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
